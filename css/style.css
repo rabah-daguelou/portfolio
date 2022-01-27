@@ -1,0 +1,57 @@
+li:hover{
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    
+}
+
+figcaption, .cv img{
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px grey;
+}
+
+.cv {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.cv img {
+     opacity: .5;
+}
+.cv .pdf {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: red;
+    font-size: 40px;
+    z-index: 1;
+}
+.cv .word {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    color: blue;
+    font-size: 40px;
+    z-index: 1;
+}
+.cv span {
+    font-size: .3em;
+}
+
+.projects-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.projects-cards-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background: white;
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 50%;
+
+
+}
