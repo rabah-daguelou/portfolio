@@ -1,14 +1,32 @@
-li:hover{
+
+ul li{
+    color: rgb(207, 51, 51);
+    margin-left: 50px;
+}
+ul li :hover{
     cursor: pointer;
-    border-bottom: 1px solid white;
+    color:#fff;
     
 }
 
-figcaption, .cv img{
+h2 {
+    font-size: 1.1em;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.cv img{
     border-radius: 5px;
     box-shadow: 1px 1px 15px grey;
 }
-
+figcaption {
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px grey;
+}
+.my_cv, .projects{
+    margin: 40px auto;
+    box-shadow: 2px 2px 5px 
+}
 .cv {
     position: relative;
     display: flex;
@@ -21,7 +39,7 @@ figcaption, .cv img{
 .cv .pdf {
     position: absolute;
     top: 40%;
-    left: 15%;
+    left: 20%;
     color: red;
     font-size: 40px;
     z-index: 1;
@@ -29,7 +47,7 @@ figcaption, .cv img{
 .cv .word {
     position: absolute;
     top: 40%;
-    left: 65%;
+    left: 66%;
     color: blue;
     font-size: 40px;
     z-index: 1;
@@ -53,6 +71,88 @@ figcaption, .cv img{
     box-shadow: 1px 1px 10px grey;
     border-radius: 50%;
     margin: 20px;
+}
 
+.reservia {
+    opacity: 0;
+    animation: show 1s ease-in-out .5s both;
+}
+.ohmyfood {
+    opacity: 0;
+    animation: show 1s ease-in-out 1s both;
+}
+.chouette {
+    opacity: 0;
+    animation: show 1s ease-in-out 1.5s both;
+}
+.orinoco {
+    opacity: 0;
+    animation: show .5s ease-in-out 2s both;
+}
+.peckoko{
+    opacity: 0;
+    animation: show 1s ease-in-out 2.5s both;
+}
+.groupomania {
+    opacity: 0;
+    animation: show 1s ease-in-out 3s both;
+}
+@keyframes show {
+    from {
+        opacity: 0;
+    }to {
+        opacity: 1;
+    }
+}
 
+.projects-cards-card {
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+.projects-cards-card img {
+    width: 150px;
+    border-radius: 10%;
+}
+/* ---- Footer ---- */
+footer {
+    padding-bottom: 40px;
+}
+footer h3{
+    font-size: 1.2em;
+}
+footer h3 i {
+    margin-right: 20px;
+}
+footer p {
+    font-size: .8em;
+    color:rgb(168, 164, 164)
+}
+.form{
+    
+    padding:20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*
+a, a:visited, a:hover{
+    color: white;
+    list-style: none;
+}
+*/
+/* --- Medias Queries ---- */
+
+@media screen and (max-width:500px) {
+    .contact {
+        flex-direction:column;
+    }
+    li {
+        margin-right: 0px;
+    }
 }

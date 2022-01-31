@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -19,7 +19,7 @@
     <header>
       <!-- Barre de navigation -->
       <nav
-        class="container-fluid navbar navbar-expand-md navbar-dark bg-dark text-white"
+        class="container-fluid navbar navbar-expand-md navbar-dark bg-dark"
       >
         <!-- Brand Logo -->
         <a class="navbar-brand logo" href="#">
@@ -28,6 +28,7 @@
             alt="Photo d'identité"
             style="width: 100px"
           />
+          
         </a>
 
         <!-- Toggler/collapsibe Button -->
@@ -42,20 +43,29 @@
 
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item mr-5">
-              <a class="nav-link active" href=""></a> Accueil
-            </li>
-            <li class="nav-item mr-5">
-              <a class="nav-link" href=""></a> Projets
-            </li>
-            <li class="nav-item"><a class="nav-link" href=""></a> CV</li>
-          </ul>
-          <ul class="navbar-nav ml-auto mr-5">
+          
+          <ul class="navbar-nav mr-auto text-right">
+            
             <li class="nav-item">
-              <a class="nav-link disabled" href=""></a> Contact
+              <a class="nav-link active" href="#"> Accueil </a> 
+            </li>
+
+            <li class="nav-item" >
+              <a class="nav-link" href="#projects"> Projets </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./images/cv.pdf" target="_blank">  CV </a> 
+            </li>
+
+          </ul>
+
+          <ul class="navbar-nav ml-auto text-right">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#contact"> Contact </a>
             </li>
           </ul>
+
         </div>
       </nav>
       <!-- Fin barre de navigation -->
@@ -68,7 +78,7 @@
 
       <div class="row">
         
-        <p class="col-8 pl-5 m-auto">
+        <p class="col-md-7 pl-5 m-auto">
           Je m'appelle Rabah Daguelou. J'ai 47 ans.
           <br />
           Je suis développeur Web fullstack 'junior'. Très passionné par
@@ -76,16 +86,20 @@
           développeur web chez OpenClassrooms et je ne cesse de m'autoformer.
         </p>
 
-        <div class="col-4 p-6 mr-auto">
-          <p class="text-center"> Télécharger mon CV </p>
-          <p class="cv"> 
+        <div class="container col-md-4 p-6 mr-auto my_cv">
+          <h2 class="text-center "> Télécharger mon CV </h2>
+          
+          <p class="cv">
+            <a href="./images/cv.pdf"> 
             <i class="pdf fas fa-file-pdf"> <span>Pdf</span></i>
             <img src="./images/cv.png" alt="" style="width: 100px" /> 
+            </a>
+
+            <a href="./images/cv.docx">
             <i class="word fas fa-file-word"> <span>Word</span></i> 
             <img src="./images/cv.png" alt="" style="width: 100px" />
+            </a>
           </p>
-          
-          
         </div>
 
       </div>
@@ -99,42 +113,44 @@
       </figcaption>
 
       <!-- Section Mes projets -->
-      <section class=" m-5 projects">
+      <section class=" m-5 projects" id="projects" >
+        <h2 class="text-center mb-5"> Mes projets </h2>
         <div class="row projects-cards">
 
-          <a href="https://rabah-daguelou.github.io/RabahDaguelou_2_25042021/">
+          <a href="https://rabah-daguelou.github.io/RabahDaguelou_2_25042021/" target="_blank">
           <div class="projects-cards-card reservia">
             <img src="./images/reservia.png" style="width: 80px" alt="">
           </div>
+          
           </a>
 
-          <a href="https://rabah-daguelou.github.io/RabahDaguelou_3_12052021/">
+          <a href="https://rabah-daguelou.github.io/RabahDaguelou_3_12052021/" target="_blank" >
           <div class="projects-cards-card ohmyfood">
-            <img src="./images/ohmyfood.png" style="width: 80px" alt="">
+            <img src="./images/ohmyfood.png" style="width: 100px" alt="">
           </div>
           </a>
 
-          <a href="https://rabah-daguelou.github.io/RabahDaguelou_4_04062021/">
-            <div class="projects-cards-card ohmyfood">
+          <a href="https://rabah-daguelou.github.io/RabahDaguelou_4_04062021/" target="_blank">
+            <div class="projects-cards-card chouette">
               <img src="./images/chouette.png" style="width: 80px" alt="">
             </div>
             </a>
 
-          <a href="https://github.com/rabah-daguelou/RabahDaguelou_5_08072021/">
+          <a href="https://github.com/rabah-daguelou/RabahDaguelou_5_08072021/" target="_blank" >
           <div class="projects-cards-card orinoco">
-            <img src="./images/orinoco.png" style="width: 80px" alt="">
+            <img src="./images/orinoco.png" style="width: 100px" alt="">
           </div>
           </a>
 
-          <a href="https://github.com/rabah-daguelou/RabahDaguelou_6_20082021.git">
+          <a href="https://github.com/rabah-daguelou/RabahDaguelou_6_20082021.git" target="_blank">
           <div class="projects-cards-card peckoko"> 
-            <img src="./images/peckoko.png" style="width: 30px" alt="">
+            <img src="./images/peckoko.png" style="width: 50px" alt="">
           </div>
           </a>
 
           <a href="https://github.com/rabah-daguelou/RabahDaguelou_p7_30112021.git">
           <div class="projects-cards-card groupomania"> 
-            <img src="./images/groupomania.png" style="width: 80px" alt="">
+            <img src="./images/groupomania.png" style="width: 100px" alt="">
           </div>
           </a>
           
@@ -145,11 +161,63 @@
 
     <!-- Début footer -->
     <footer>
-      <div class="container-fluid bg-dark text-white">
-        <p class="text-center">
-          <i class="fas fa-copyright"></i> Rabah DAGUELOU. 2022.
-        </p>
+    <div class="container-fluid bg-dark text-white">
+
+      <div class="contact" id="contact">     
+         <!-- infos contact-->
+      <div class="">
+      <h3 class=""><i class="fas fa-address-card"></i> Adresse</h3>
+      <p> Noisy le Sec. 93130</p>
+      
+      <h3 class=""><i class="fas fa-phone"></i> Téléphone</h3>
+      <p> 06 51 93 18 44 </p>
+
+      <a href="mailto:lounislina@yahoo.fr">
+      <h3 class=""> <i class="fas fa-envelope"></i> Email </h3>
+      <p> lounislina@yahoo.fr </p>
+      </a>
+
+      <a href="https://linkedin.com/in/rabah-daguelou-68171520a" target="_blank">
+      <h3 class=""> <i class="fab fa-linkedin"></i> Linkedin </h3>
+      <p> linkedin.com/in/rabah-daguelou-68171520a </p>
+      </a>
+    </div>
+      
+      <!-- Formulaire de contact -->
+
+      <div class="form">
+        <h3> Me contacter ?</h3>
+        <form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+
+					<div class="form-group">
+						<label> Nom </label>
+						<input id="name" class="form-control" required />
+					</div>
+
+					<div class="form-group">
+						<label> Adresse email </label>
+						<input id="email" class="form-control" type="email" required />
+					</div>
+
+          <div class="form-group">
+					<label> Votre message </label>
+					<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+					</div>
+          
+          
+					<button class="form-group btn-lg btn-block " type="submit">
+						Envoyer
+					</button>
+        
+				</form>
       </div>
+      <!-- fin formulaire de contact-->
+
+    </div>
+      <p class="text-right copyright">
+        <i class="fas fa-copyright"></i> Rabah DAGUELOU. 2022.
+      </p>
+    
     </footer>
     <!-- Fin footer -->
 
