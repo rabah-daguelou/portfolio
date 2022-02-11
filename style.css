@@ -1,3 +1,10 @@
+*{
+  margin:o;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
 ul li {
   color: rgb(207, 51, 51);
   margin-left: 50px;
@@ -12,60 +19,53 @@ h2 {
   margin-top: 20px;
   padding-top: 20px;
 }
+
+/* cv */
 .cv img {
   border-radius: 5px;
   box-shadow: 1px 1px 15px grey;
+  opacity: 0.5;
+}
+
+.my_cv,
+.projects {
+  width: 200px;
+  margin: 40px auto;
+  box-shadow: 2px 2px 5px;
+}
+.cv {
+  
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cv .pdf {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  color: red;
+  font-size: 40px;
+  z-index: 1;
+}
+
+.cv span {
+  font-size: 0.3em;
 }
 figcaption {
   width: 80%;
   border-radius: 5px;
   box-shadow: 1px 1px 15px grey;
 }
-.my_cv,
-.projects {
-  margin: 40px auto;
-  box-shadow: 2px 2px 5px;
-}
-.cv {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-}
-.cv img {
-  opacity: 0.5;
-}
-.cv .pdf {
-  position: absolute;
-  top: 40%;
-  left: 20%;
-  color: red;
-  font-size: 40px;
-  z-index: 1;
-}
-.cv .word {
-  position: absolute;
-  top: 40%;
-  left: 66%;
-  color: blue;
-  font-size: 40px;
-  z-index: 1;
-}
-.cv span {
-  font-size: 0.3em;
-}
-
 /* Skills */
 
+/* hard skills */
 .hard-skills {
   margin-top: 30px;
   background: rgb(80, 79, 79);
   color: #fff;
 }
-.soft-skills {
-  background: rgb(204, 203, 197);
-  margin-top: 30px;
-  color: rgb(12, 12, 12);
-}
+
 .bar {
   margin-right: 20px;
 }
@@ -110,30 +110,184 @@ figcaption {
   font-size: 24px;
   color: rgb(16, 16, 17);
 }
-.progress-bar {
+/* barre html */
+.progress-html {
   width: 0px;
   margin-left: -15px;
   height: 10px;
-  animation: progress 3s both;
+  animation: progress-html 3s both;
 }
-
-@keyframes progress {
+@keyframes progress-html {
   0% {
     width: 0%;
     color: grey;
   }
-  25% {
-    color: grey;
-  }
-  50% {
-    color: blue;
-  }
+  
   100% {
-    width: 75%;
-    background: chartreuse;
+    width: 90%;
+    background: coral;
+    ;
   }
 }
-/* Soft Skills */
+/* barre css */
+.progress-css {
+    width: 0px;
+    margin-left: -15px;
+    height: 10px;
+    animation: progress-css 3s both;
+  }
+  @keyframes progress-css {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width: 90%;
+      background: rgb(32, 10, 231);
+      ;
+    }
+  }
+/* barre bootstrap */
+.progress-bootstrap {
+    width: 0px;
+    margin-left: -15px;
+    height: 10px;
+    animation: progress-bootstrap 3s both;
+  }
+  @keyframes progress-bootstrap {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width: 70%;
+      background: rgb(248, 4, 228);
+      ;
+    }
+  }
+  /* barre javascript */
+.progress-javascript {
+    width: 0px;
+    margin-left: -15px;
+    height: 10px;
+    animation: progress-javascript 3s both;
+  }
+  @keyframes progress-javascript {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width: 80%;
+      background: rgb(154, 165, 7);
+      ;
+    }
+  }
+/* barre VueJs */
+.progress-vuejs {
+    width: 0px;
+    margin-left: -15px;
+    height: 10px;
+    animation: progress-vuejs 3s both;
+  }
+  @keyframes progress-vuejs {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width:80%;
+      background: rgb(15, 158, 22);
+      ;
+    }
+  }
+/* barre nodejs */
+.progress-nodejs {
+    width: 0px;
+    margin-left: -15px;
+    height: 10px;
+    animation: progress-nodejs 3s both;
+  }
+  @keyframes progress-nodejs {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width:60%;
+      background: rgb(14, 241, 45);
+      ;
+    }
+  }
+/* barre express */
+.progress-express {
+    width: 0px;
+    margin-left: -15px;
+    height: 10px;
+    animation: progress-express 3s both;
+  }
+  @keyframes progress-express {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width: 50%;
+      background: rgb(154, 165, 7);
+      ;
+    }
+  }
+/* barre mysql */
+.progress-mysql {
+    width: 0px;
+    margin-left: -15px;
+    height: 10px;
+    animation: progress-mysql 3s both;
+  }
+  @keyframes progress-mysql {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width: 60%;
+      background: rgb(10, 131, 201);
+      ;
+    }
+  }
+
+  /* barre git*/
+.progress-git {
+    width: 0px;
+    margin-left: -15px;
+    height: 10px;
+    animation: progress-git 3s both;
+  }
+  @keyframes progress-git {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width: 70%;
+      background: rgb(8, 8, 8);
+      ;
+    }
+  }  
+/* Soft skills */
+.soft-skills {
+    background: rgb(204, 203, 197);
+    margin-top: 30px;
+    color: rgb(12, 12, 12);
+  }
 .yes {
     width: 100px;
     height: 60px;
@@ -143,7 +297,8 @@ figcaption {
 }
 @keyframes yes {
     from {
-        transform: rotate(0.5turn), skew(20deg);
+        transform-origin: right;
+        transform: skew(40deg);
         
     }
      
