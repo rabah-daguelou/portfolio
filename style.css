@@ -57,6 +57,11 @@ figcaption {
   border-radius: 5px;
   box-shadow: 1px 1px 15px grey;
 }
+/* Projets */
+#projects {
+  justify-content: center;
+  align-items: center;
+}
 /* Skills */
 
 /* hard skills */
